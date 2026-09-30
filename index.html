@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Darshan Kacha | React Native Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f8fc;--surface:#fff;--ink:#10173a;--muted:#5a6285;--line:#e3e6f2;--accent:#3d5afe;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,sans-serif;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:900px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:22px;justify-content:flex-end;padding:22px 0;font-weight:500;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+.hero{padding:36px 0 64px}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:var(--muted);background:var(--surface);border:1px solid var(--line);padding:6px 14px 6px 10px;border-radius:99px;margin-bottom:20px}
+.badge i{width:8px;height:8px;border-radius:50%;background:#2fb86a}
+.hero h1{font-size:clamp(2.6rem,7vw,4.2rem);font-weight:800;letter-spacing:-.03em}
+.hero p{max-width:36em;font-size:1.2rem;color:var(--muted);margin:20px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:99px;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:#fff}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;letter-spacing:-.02em;margin-bottom:28px}
+.pgrid{display:grid;gap:18px}
+.pcard{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.pcard .top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.pcard h3{font-size:1.25rem}
+.pcard .tag{color:var(--muted);font-size:.9rem}
+.pcard ul{margin:12px 0 14px;padding-left:20px}
+.pcard li{margin-bottom:5px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.chips i{font-style:normal;font-size:.82rem;background:#eef0fb;color:#2436a8;border-radius:8px;padding:3px 10px;font-weight:500}
+.store{display:flex;gap:8px;flex-wrap:wrap}
+.store a{background:var(--ink);color:#fff;font-weight:600;text-decoration:none;padding:8px 15px;border-radius:10px;font-size:.9rem}
+.store em{font-style:normal;color:var(--muted);font-size:.9rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px 32px}
+.skills h3{font-size:1.05rem;margin-bottom:8px}
+.skills p{margin:0;color:var(--muted)}
+.job{display:grid;grid-template-columns:170px 1fr;gap:6px 28px;margin-bottom:36px}
+.job time{color:var(--muted);font-weight:500}
+.job h3{font-size:1.3rem}
+.job .co{color:var(--muted);margin:2px 0 10px}
+.job ul{margin:0;padding-left:20px}.job li{margin-bottom:5px}
+.edu p{margin:4px 0;color:var(--muted)}.edu strong{color:var(--ink)}
+.contact{font-size:clamp(1.3rem,4vw,2rem);font-family:"Bricolage Grotesque",sans-serif;font-weight:800;word-break:break-word}
+.contact a{text-decoration-thickness:3px;text-underline-offset:6px;text-decoration-color:var(--accent)}
+footer{padding:28px 0 44px;color:var(--muted);font-size:.95rem}
+@media(max-width:640px){.job{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#work">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<div class="badge"><i></i> Open to new opportunities</div>
+<h1>Darshan Kacha</h1>
+<p>React Native developer in Ahmedabad. Over 4 years building apps that are live on the App Store and Play Store, for clients in Dubai, the UK, the USA, South Africa and India.</p>
+<div class="btns"><a class="btn main" href="#work">See my apps</a><a class="btn" href="mailto:darshankacha.tech@gmail.com">Email me</a></div>
+</header>
+
+<section id="work">
+<h2>Apps I've shipped</h2>
+<div class="pgrid">
+
+<div class="pcard"><div class="top"><h3>Fitness rewards app</h3><span class="tag">Fitness tech, Dubai</span></div>
+<ul><li>Step-tracking system that rewards users with coins for walking.</li><li>Third-party tracking libraries plus custom logic for accurate step validation.</li><li>Google Maps view of movement paths and activity zones.</li><li>Social feed to share achievements and milestones.</li></ul>
+<div class="chips"><i>React Native</i><i>TypeScript</i><i>Redux Thunk</i><i>Google Maps API</i></div>
+<div class="store"><a href="https://apps.apple.com/app/id1497718755" target="_blank" rel="noopener">App Store</a><a href="https://play.google.com/store/apps/details?id=com.fitze" target="_blank" rel="noopener">Play Store</a></div></div>
+
+<div class="pcard"><div class="top"><h3>Smart agriculture app</h3><span class="tag">Agritech, Mumbai</span></div>
+<ul><li>Field monitoring, weather analysis and crop recommendations.</li><li>Field mapping and geolocation with Google Maps.</li><li>Offline-first with Redux and Realm.</li><li>Real-time farm data sync through REST APIs and Node.js services.</li></ul>
+<div class="chips"><i>React Native</i><i>TypeScript</i><i>Redux</i><i>Realm</i><i>Node.js</i></div>
+<div class="store"><a href="https://play.google.com/store/apps/details?id=com.smartagrolite.id" target="_blank" rel="noopener">Play Store</a></div></div>
+
+<div class="pcard"><div class="top"><h3>Health tracking and diagnostics</h3><span class="tag">Health tech, USA</span></div>
+<ul><li>Blood test interpretation and trend analysis.</li><li>Logic that flags early disease indicators from structured health data.</li><li>Secure report storage and sharing with privacy-focused design.</li><li>Subscription-based access to advanced insights.</li></ul>
+<div class="chips"><i>React Native</i><i>TypeScript</i><i>Redux Toolkit</i><i>React Hooks</i></div>
+<div class="store"><a href="https://apps.apple.com/app/id6444776238" target="_blank" rel="noopener">App Store</a></div></div>
+
+<div class="pcard"><div class="top"><h3>Multi-vendor mall platform</h3><span class="tag">E-commerce, South Africa</span></div>
+<ul><li>Three apps: Customer, Picker/Manager and Driver.</li><li>Product browsing, checkout and order tracking for shoppers.</li><li>Inventory, order and discount controls for sellers and mall managers.</li><li>Multi-language support with i18n.</li></ul>
+<div class="chips"><i>React Native</i><i>JavaScript</i><i>Redux</i><i>i18n</i></div>
+<div class="store"><em>Client app, no public store link</em></div></div>
+
+<div class="pcard"><div class="top"><h3>Dating and discovery app</h3><span class="tag">Social, UK</span></div>
+<ul><li>Profiles, matches and messaging.</li><li>Swipe-based discovery with smooth navigation.</li><li>Onboarding and profile management modules.</li><li>Complex async workflows handled with Redux Saga.</li></ul>
+<div class="chips"><i>React Native</i><i>TypeScript</i><i>Redux Saga</i><i>React Hooks</i></div>
+<div class="store"><em>Client app, no public store link</em></div></div>
+
+</div>
+</section>
+
+<section id="skills">
+<h2>What I work with</h2>
+<div class="skills">
+<div><h3>Languages</h3><p>TypeScript, JavaScript (ES6+), HTML, CSS, C, Python (basic)</p></div>
+<div><h3>Core</h3><p>React Native, React, React Hooks, React Navigation</p></div>
+<div><h3>State management</h3><p>Redux Toolkit, Redux Thunk, Redux Saga</p></div>
+<div><h3>Mobile features</h3><p>Push notifications (FCM and local), deep linking, native tasks, location tracking, app permissions</p></div>
+<div><h3>Data and APIs</h3><p>REST APIs, Axios, Postman, Realm, AsyncStorage, Google Maps API</p></div>
+<div><h3>Firebase</h3><p>Authentication, Crashlytics, Analytics</p></div>
+<div><h3>Release</h3><p>Android APK and AAB, iOS IPA, Play Store and App Store deployment, App Center CI/CD, CodePush OTA updates</p></div>
+<div><h3>Testing and tools</h3><p>Jest, React Native Testing Library, Git (GitHub and GitLab), Jira, Figma (basic), Node.js (basic), Agile and Scrum</p></div>
+<div><h3>AI tools</h3><p>Claude (Anthropic), prompt engineering, AI-assisted development, ChatGPT, AI code review and debugging workflows</p></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="job"><time>Jul 2026 to present</time><div>
+<h3>React Native AI Engineer</h3><div class="co">DXFactor Solutions Pvt Ltd, Ahmedabad, Gujarat</div>
+<ul><li>Working as an AI Engineer with a focus on React Native, building and maintaining cross-platform mobile apps.</li><li>Set up and improved project structure and folder architecture for scalable, maintainable codebases.</li><li>Working on integrating AI-driven features into React Native applications.</li></ul></div></div>
+<div class="job"><time>Jan 2022 to Jun 2026</time><div>
+<h3>React Native Developer</h3><div class="co">Qrious Tech Team LLP, Ahmedabad</div>
+<ul><li>Designed and built multiple cross-platform apps with React Native.</li><li>Worked with UI/UX teams to turn designs into intuitive interfaces.</li><li>Managed app state with Redux, Redux Thunk and Redux Saga.</li><li>Integrated REST APIs, Firebase, Google Maps and third-party SDKs.</li><li>Optimized performance and handled releases on Android and iOS.</li></ul></div></div>
+<div class="job"><time>May to Dec 2021</time><div>
+<h3>Web Development Intern</h3><div class="co">Info labz</div>
+<ul><li>Worked on live web projects with real-time API integration.</li><li>Built responsive pages with HTML, CSS and JavaScript.</li></ul></div></div>
+</section>
+
+<section class="edu" aria-labelledby="edu-h">
+<h2 id="edu-h">Education</h2>
+<p><strong>B.E. in Computer Engineering, 2018 to 2022</strong></p>
+<p>Gandhinagar Institute of Technology, CGPA 8.52 / 10</p>
+<p>Languages: English, Hindi, Gujarati</p>
+</section>
+
+<section id="contact">
+<h2>Let's build something</h2>
+<p class="contact"><a href="mailto:darshankacha.tech@gmail.com">darshankacha.tech@gmail.com</a><br><a href="tel:+917990924363">+91 79909 24363</a></p>
+</section>
+<footer>Darshan Kacha, Ahmedabad, Gujarat, India</footer>
+</div>
+</body>
+</html>
